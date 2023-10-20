@@ -1,0 +1,46 @@
+.Options
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    text-align: center;
+    font-size: larger;
+    gap: 15px;
+    padding-left: 15px;
+    padding: 10px;
+}
+.cardOne
+{
+    display: flex;
+    flex-direction: row;
+}
+.card-img-top
+{
+    height: 200px;
+    border-radius: 2%;
+}
+.card
+{
+    padding: 2px ;
+}
+
+.body
+{
+    background-image: linear-gradient(#beadfa,whitesmoke);
+}
+.d-flexone
+{
+    border-radius:2%;           /*Side-Bar*/
+    height: 695px;
+}
+.d-flex
+{
+    height: 100px;  
+}
+
+#trialOne
+{
+    width: 150px;
+    display: flex;
+}

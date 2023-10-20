@@ -1,0 +1,65 @@
+
+.mainCard
+{
+    background-image: linear-gradient(#beadfa,whitesmoke);
+}
+.d-flexone
+{
+    border-radius:2%;           /*Side-Bar*/
+    height: 695px;
+}
+.d-flex
+{
+    height: 100px;  
+}
+
+#trialOne
+{
+    width: 150px;
+    display: flex;
+}
+.bodyAssgn
+{
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(#beadfa,whitesmoke);
+}
+.topBar
+{   
+    display: flex;
+    flex-direction: column;
+    flex-grow: inherit;
+    margin: 10px;
+    height: 100px;
+    width: 1500px;
+    border-radius: 2%;
+}
+.navbar
+{
+    height: 452px;
+    display: grid;
+    grid-column-start: 4;
+}
+.btn
+{
+    display: flex;
+}
+.rightPage
+{
+
+    display: flex;
+    flex-direction: column;
+}
+.rightCont
+{
+
+    display: flex;
+    padding: 15px;
+    gap: 15px;
+}
+#submit, #assigned, #ToBe
+{
+    background-color: greenyellow;
+    font-weight: 100;
+    color: tomato;
+}

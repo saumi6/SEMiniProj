@@ -1,0 +1,25 @@
+#testselect{
+    align-self: flex-end;
+}
+
+#navbarNavAltMarkup{
+    display: flex;
+    flex-direction: column;
+}
+
+table{
+    max-width: 1500px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    padding-left: 0px;
+    min-width: 100%;
+}
+.trialOne
+{
+    min-width: 80%;
+    margin: 15px;
+    
+}
