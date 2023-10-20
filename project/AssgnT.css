@@ -1,0 +1,50 @@
+#trialOne
+{
+    width: 150px;
+    display: flex;
+}
+.body
+{
+    background-image: linear-gradient(#beadfa,whitesmoke);
+}
+.d-flexone
+{
+    border-radius:2%;           /*Side-Bar*/
+    height: 695px;
+}
+.d-flex
+{
+    height: 100px;  
+}
+.mainPage
+{
+    background-image: linear-gradient(#beadfa,whitesmoke);
+
+    display:flex
+}
+.card
+{
+    max-height: 300px;
+    margin: 15px;
+}
+.Page
+{
+    height: 200px;
+    margin: 1px;
+    display: flex;
+}
+.greenButtons
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100px;
+}
+.card-title
+{
+    text-align: center;
+}
+#checkButton
+{
+    margin-top: 0px;
+}
