@@ -1,0 +1,116 @@
+Options
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    text-align: center;
+    font-size: larger;
+    gap: 15px;
+    padding-left: 15px;
+    padding: 10px;
+}
+.cardOne
+{
+    display: flex;
+    flex-direction: row;
+}
+.card-img-top
+{
+    height: 200px;
+    border-radius: 2%;
+}
+.card
+{
+    padding: 2px ;
+}
+
+/*.body
+{
+
+    background-image: linear-gradient(#beadfa,whitesmoke);
+}*/
+.d-flexone
+{
+    border-radius:2%; /*Side-Bar*/
+    height: 695px;
+    background-color: #053B50;
+}
+.d-flex
+{
+    height: 100px;  
+}
+#toptxt
+{
+    background-color: lightblue;
+    padding-left: 25px;
+}
+#trialOne
+{
+    width: 150px;
+    display: flex;
+    background-color:#a0eae5;
+    border: white; 
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(#053B50,#64CCC5);
+}
+
+#table1{
+    display: flex;
+    max-height: 1000px;
+    margin-top: 5%;
+    margin-left: 10%;
+    background-color: white;
+    width: 75%;
+}
+
+.plans{
+    display: flex;
+    padding-top: 100px;
+    flex-direction: column;
+    padding-left: 30px;
+}
+.topText
+{   
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    height: 50px;
+}
+
+.fs-3
+{
+    color: white;
+}
+h6{
+    text-align: center;
+}
+#btnimp
+{
+    display: flex;
+    flex-direction: column;
+    float:right;
+    margin-left: 15px;
+}
+
+#TeacherName
+{
+    width: 100%;
+    background-color: lightblue;
+}
+.TTwithTopBar
+{   
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.Info
+{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
