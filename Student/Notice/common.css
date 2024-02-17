@@ -1,0 +1,42 @@
+.d-flexone
+{
+    border-radius:2%;           /*Side-Bar*/
+    height: 695px;
+}
+.d-flex
+{
+    height: 100px;  
+}
+
+#trialOne
+{
+    width: 200px;
+    background-color:#a0eae5;
+    border: white; 
+    display: flex;
+}
+.d-flexone
+{
+    background-color: #053B50;
+
+}
+.fs-3
+{
+  color: white;
+}
+.main
+{
+  display: flex;
+  background-image: linear-gradient(#053B50,#64CCC5);
+}
+.RightPage
+{
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  width: 100%;
+}
+.icon-link
+{
+  color: red;
+}

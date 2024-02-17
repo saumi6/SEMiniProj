@@ -1,0 +1,101 @@
+.piechart { 
+    margin-top: 20px; 
+    display: block;  
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    background-image: conic-gradient( 
+        rgb(247, 39, 39) 18deg,    
+        rgb(52, 165, 52) 0); 
+} 
+
+body, 
+.piechart { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+} 
+
+#pieblock{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.container{
+    Display: flex;
+    min-width: 100%;
+    margin: 10px;
+    flex-direction: column;
+    padding-bottom: 0px;
+}
+.youratt{
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+}
+#subjectwise{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.subjects{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 13%;
+}
+
+.Options
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    text-align: center;
+    font-size: larger;
+    gap: 15px;
+    padding-left: 15px;
+    padding: 10px;
+}
+.text
+{
+    color: white;
+}
+body
+{
+    /*background-image: linear-gradient(#0243f6,whitesmoke);*/
+    background-image: linear-gradient(#053B50,#64CCC5);
+}
+.trial
+{
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+}
+#trialOne
+{
+    width: 200px;
+    display: flex;
+    background-color:#a0eae5;
+    border: white;
+}
+.d-flexone
+{
+    border-radius:2%;           /*Side-Bar*/
+    height: 695px;
+    background-color: #053B50;
+}
+.d-flex
+{
+    height: 100px;  
+}
+.fs-3
+{
+    color: white;
+}

@@ -1,0 +1,48 @@
+#trialOne
+{
+    width: 150px;
+    display: flex;
+    background-color:#a0eae5;
+    border: white; 
+}
+.d-flexone
+{
+    border-radius:2%;           /Side-Bar/
+    height: 800px;
+    background-color: #053B50;
+}
+.d-flex
+{
+    height: 100px;  
+}
+
+.fs-3
+{
+    color: white;
+}
+.TopBar
+{
+    height: 100px;
+    width:75rem;
+    background-color: lightblue;
+    text-align: left,center;
+    border: 1px solid black;
+    display: flex;
+    gap:300px;
+}
+.main
+{
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(#053B50,#64CCC5);
+    height: 729px;
+}
+.RightPage
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+

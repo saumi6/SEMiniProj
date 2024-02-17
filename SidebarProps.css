@@ -1,0 +1,25 @@
+#trialOne
+{
+    width: 150px;
+    display: flex;
+    background-color:#a0eae5;
+    border: white; 
+}
+.d-flexone
+{
+    border-radius:2%;           /*Side-Bar*/
+    height: 695px;
+    background-color: #053B50;
+}
+.d-flex
+{
+    height: 100px;  
+}
+.bdy
+{
+    background-image: linear-gradient(#053B50,whitesmoke);
+}
+.fs-3
+{
+    color: white;
+}

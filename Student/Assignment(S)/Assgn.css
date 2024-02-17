@@ -1,0 +1,63 @@
+
+.mainCard
+{
+    background-image: linear-gradient(#053B50,#64CCC5);
+    height: 729px;
+}
+.d-flexone
+{
+    border-radius:2%;          /*Side-Bar*/
+    max-height: 695px;
+    background-color: #053B50;
+}
+.d-flex
+{
+    height: 100px;  
+}
+
+#trialOne
+{
+    width: 200px;
+    display: flex;
+    background-color:#a0eae5;
+    border: white; 
+}
+.bodyAssgn
+{
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(#053B50,#64CCC5);
+
+}
+
+.navbar
+{
+    height: 452px;
+    display: grid;
+    grid-column-start: 4;
+}
+.btn
+{
+    display: flex;
+}
+
+#submit, #assigned, #ToBe
+{
+    background-color:white;
+    font-weight: 500;
+    color:black;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-right: 125px;
+}
+.fs-3
+{
+    color: white;
+    padding: 5px;
+}
+.rightCont
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}

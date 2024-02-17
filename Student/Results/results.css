@@ -1,0 +1,71 @@
+#testselect{
+    align-self: flex-end;
+}
+
+#navbarNavAltMarkup{
+    display: flex;
+    flex-direction: column;
+}
+
+#marks 
+{
+    max-width: 75%;
+    padding-left: 25%;
+    padding-top: 50px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.resultS1U1,.resultsS1S,.resultsS1U1,.resultS2S,.resultsS1S,.resultS2U2,.resultsMain
+{
+    height: 695px;
+    display: flex;
+    gap: 10px;
+    background-image: linear-gradient(#053B50,#64ccc5);
+
+}
+.resultTabS1U1,.ResultTabS1S,.ResultTabS1U2,.ResultTabS2S,.ResultTabS2U1,.ResultTabsS2U2,.ResultMainTab
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 15px;
+    width:750px;
+}
+#trialOne
+{
+    width: 150px;
+    display: flex;
+}
+#trialOne
+{
+    width: 200px;
+    display: flex;
+    background-color:#a0eae5;
+    border: white; 
+}
+.d-flexone
+{
+    border-radius:2%;           /*Side-Bar*/
+    height: 695px;
+    background-color: #053B50;
+}
+.d-flex
+{
+    height: 100px;  
+}
+.bdy
+{
+    background-image: linear-gradient(#053B50,#64ccc5);
+
+}
+.fs-3
+{
+    color: white;
+}
+.result
+{
+    color: white;
+}
+
+
