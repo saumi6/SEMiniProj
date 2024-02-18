@@ -1,0 +1,14 @@
+.btn:hover {
+    transform: translateY(-5px);
+}
+
+.card:hover
+{
+    transform: translateY(-5px);
+}
+.p-2:hover
+{
+    background-color: white;
+    color: blue;
+    border-radius: 5%;
+}

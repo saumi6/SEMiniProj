@@ -7,3 +7,5 @@
           holidayMessage.style.display = "none";
       }, 60000); // Display for 1 minute (60,000 milliseconds)
   });
+
+

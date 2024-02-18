@@ -10,30 +10,30 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../Utils.css">
     <style>
         .message-box {
             position: absolute;
             background-color: #f1f1f1;
             border: 1px solid #ddd;
             padding: 10px;
-            animation: slideIn 10s ease-out;
-            transform: translateX(100%);
+            animation: slideIn 5s ease-out;
+            /*transform: translateX(10px);*/
             display: none;
         }
 
 
         @keyframes slideIn {
             0% {
-                transform: translateX(-100%);
+                transform: translateY(-50px);
             }
             100% {
-                transform: translateX(0);
+                transform: translateY(0);
             }
         }
     </style>
   </head>
 
-<script src="./Main.js" charset="UTF-8"></script>
 <body class="body">
 
 <div class="cardOne">
@@ -158,5 +158,5 @@
 </aside>
 </section>
 </body>
-
+<script src="scriptMain.js"></script>
 </html>
