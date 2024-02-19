@@ -1,0 +1,15 @@
+
+.Page
+{
+    height: 200px;
+    margin: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-self: center;
+}
+body
+{
+    background-image: linear-gradient(#053B50,#64CCC5);
+    height: 725px;
+}
