@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv = "refresh" content = " 0 ; url = Assgn.php"/>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./Assgn.css" rel="stylesheet">
@@ -12,6 +12,18 @@
 </head>
 
 <body class="bodyAssgn">
+<?php
+    try{
+    require_once "../../dbh.inc.php";
+    $query = "SELECT link FROM assignments;";
+    $stmt = $pdo->prepare($query);
+    $stmt->execute();
+    $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    } catch (PDOException $e)
+    {
+        die("Query failed" . $e->getmessage());
+    }
+?>
     <div class="mainCard"><!--Assignments-->
         <aside class="left-side sidebar-offcanvas">
             <div class="d-flexone flex-column flex-shrink-0 p-3 bg-body-#053B50" style="width: 280px;">
@@ -94,7 +106,7 @@
             <div class="contentRight">
             <div style="min-height: 120px;">
                 <div class="collapse collapse-vertical" id="collapseSubmitted">
-                <div class="card card-body" style="width: 200px; height: 200px;">
+                <div class="card card-body" style="width: 800px; height: 200px;">
                     Submitted:5
                 </div>
                 </div>
@@ -125,8 +137,20 @@
             <div class="contentRight">
             <div style="min-height: 120px;">
                 <div class="collapse collapse-vertical" id="collapseAssigned">
-                <div class="card card-body" style="width: 200px;height: 200px;">
-                    Assigned:3
+                <div class="card card-body" style="width: 800px;height: 200px;">
+                <?php
+                        if(empty($results)){
+                            echo "No assignments due";
+                        }
+                    
+                    else {
+                        foreach ($results as $row){
+                            $link = $row["link"];
+                            echo "<a href=$link> $link </a>";
+                            echo "<br>";
+                        }
+                    }
+                    ?>
                 </div>
                 </div>
             </div>
@@ -156,7 +180,7 @@
             <div class="contentRight">
             <div style="min-height: 120px;">
                 <div class="collapse collapse-vertical" id="collapseMissing">
-                <div class="card card-body" style="width: 200px;height: 200px;">
+                <div class="card card-body" style="width: 800px;height: 200px;">
                     Missing:0
                 </div>
                 </div>

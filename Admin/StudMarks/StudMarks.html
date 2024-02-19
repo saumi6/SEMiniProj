@@ -11,7 +11,7 @@
     </style>
 </head>
     
-    <body class="bdy" style="height: 729px;">
+    <body class="bdy" style="height: 950px;">
       <aside class="left-side sidebar-offcanvas">
         <div class="d-flexone flex-column flex-shrink-0 p-3 bg-body-" style="width: 280px;height: 729px;">
         <a href="../adminMain.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
@@ -48,6 +48,12 @@
               <a href="../StudMarks/StudMarks.html"class="btn btn-warning" id="trialOne">Students SEM Marks</a>
             </a>
           </li>
+          <li>
+            <a href="#" class="nav-link link-body-emphasis">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+              <a href="../../LoginPage.html"class="btn btn-danger" style="text-align: left;width: 150px;">Log-Out</a>
+            </a>
+          </li>
         </ul>
         
     </aside>
@@ -63,30 +69,47 @@
 
           
         <div class="card">
-            <style>
-                .card{
-                    height: 450px;
-                    width: 500px;
-                }
-            </style>
-            <div class="card-header">Student SEM Marks</div>
-            <div class="card-body">
-                <form>
-                    <div class="form-group">
-                        <label for="studentName">Seat Number</label>
-                        <input type="text" class="form-control" id="studentName" placeholder="Enter seat number">
-                    </div>
-                    <div class="form-group">
-                        <label for="studentID">Mother's Name</label>
-                        <input type="text" class="form-control" id="studentID" placeholder="Enter mother's name">
-                    </div>
-                    <div class="form-group">
-                        <label for="studentID">Semester</label>
-                        <input type="text" class="form-control" id="studentID" placeholder="Enter semester">
-                    </div>
-                    <!-- Add more fields as needed -->
-                    <button type="submit" id="reg" class="btn btn-primary">Access</button>
-                </form>
+          <style>
+            .card{
+                height: 750px;
+                width: 500px;
+            }
+        </style>
+        <div class="card-header">Student SEM Marks</div>
+        <div class="card-body">
+            <form action="StudMarks.php" method="post">
+
+                    <label for="studentName">Seat Number</label>
+                    <input type="text" class="form-control" name="studentName" placeholder="Enter seat number">
+
+                  <select name="semester">
+                  <option value="1">Sem 1</option>
+                  <option value="2">Sem 2</option>
+                </select>
+              
+
+                    <label for="studentID">Subject 1</label>
+                    <input type="text" class="form-control" name="sub1" placeholder="Subject 1 Marks">
+                
+
+                  <label for="studentID">Subject 2</label>
+                  <input type="text" class="form-control" name="sub2" placeholder="Subject 2 Marks">
+            
+
+                <label for="studentID">Subject 3</label>
+                <input type="text" class="form-control" name="sub3" placeholder="Subject 3 Marks">
+          
+
+              <label for="studentID">Subject 4</label>
+              <input type="text" class="form-control" name="sub4" placeholder="Subject 4 Marks">
+        
+
+            <label for="studentID">Subject 5</label>
+            <input type="text" class="form-control" name="sub5" placeholder="Subject 5 Marks">
+  
+                <!-- Add more fields as needed -->
+                <button type="submit" id="reg" class="btn btn-primary">Submit</button>
+            </form>
             </div>
         </div>
     </div>

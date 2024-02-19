@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv = "refresh" content = " 0 ; url = results.php"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -10,6 +9,25 @@
     <link rel="stylesheet" href="../../Utils.css">
 </head>
 <body>
+<?php
+    session_start();
+    try{
+    require_once "../../dbh.inc.php";
+    $user = $_SESSION["user"];
+    $query = "SELECT * FROM s1mark where rollno=$user;";
+    $stmt = $pdo->prepare($query);
+    $stmt->execute();
+    $results = $stmt->fetch(PDO::FETCH_ASSOC);
+    if (empty($results)){
+        $s=["-","-","-","-","-","-"];
+    }else{
+        $s=[$results["rollno"],$results["s1"],$results["s2"],$results["s3"],$results["s4"],$results["s5"]];
+    }
+    } catch (PDOException $e)
+    {
+        die("Query failed" . $e->getmessage());
+    }
+?>
     <div class="resultsMain">
       <aside class="left-side sidebar-offcanvas">
         <div class="d-flexone flex-column flex-shrink-0 p-3 bg-body-" style="width: 280px;">
@@ -103,31 +121,31 @@
               <tr>
                 <th scope="row">1</th>
                 <td>Physics</td>
-                <td>80</td>
+                <td><?php echo $s[1]?></td>
                 <td>100</td>
               </tr>
               <tr>
                 <th scope="row">2</th>
                 <td>Chemistry</td>
-                <td>80</td>
+                <td><?php echo $s[2]?></td>
                 <td>100</td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>Maths</td>
-                <td>80</td>
+                <td><?php echo $s[3]?></td>
                 <td>100</td>
               </tr>
               <tr>
                 <th scope="row">4</th>
                 <td>BEE</td>
-                <td>80</td>
+                <td><?php echo $s[4]?></td>
                 <td>100</td>
               </tr>
               <tr>
                 <th scope="row">5</th>
                 <td>Mechanics</td>
-                <td>80</td>
+                <td><?php echo $s[5]?></td>
                 <td>100</td>
               </tr>
             </tbody>

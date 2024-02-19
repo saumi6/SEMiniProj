@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv = "refresh" content = " 0 ; url = LoginPage.php"/>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+  <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link href="./sign-in/sign-in.css" rel="stylesheet">
 </head>
@@ -26,20 +25,19 @@
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 
           <div class="form px-4 pt-5">
-            <input type="text" name="" class="form-control" placeholder="Email or Phone">
-            <input type="text" name="" class="form-control" placeholder="Password">
-            <div class="mt-3">
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Select user type</option>
-                <option value="1">Student</option>
-                <option class="tchr" value="2">Teacher</option>
-              </select>
-              <!--<button class="btn btn-primary btn-block mt-3">Select</button>-->
-            </div>
-            <button class="btn btn-dark btn-block"><a href="./Student/Main/Main.html" style="color: white;">Login</a></button>
-
-
-
+            <form action="login.php" method="post">
+            <input type="text" name="email" class="form-control" placeholder="Email">
+            <input type="text" name="password" class="form-control" placeholder="Password">
+            
+            
+            
+              <!--<select id="usertype" name="usertype" class="form-select" aria-label="Default select example">
+            
+                <option value="student" >Student</option>
+                <option value="teacher">Teacher</option>
+              </select>-->
+              <button type="submit"> Submit </button>
+          </form>
           </div>
         </div>
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
@@ -48,7 +46,7 @@
             <input type="text" name="" class="form-control" placeholder="Name">
             <input type="text" name="" class="form-control" placeholder="Email">
             <input type="text" name="" class="form-control" placeholder="Phone">
-            <input type="password" name="" class="form-control" placeholder="Password">
+            <input type="text" name="" class="form-control" placeholder="Password">
             <button class="btn btn-dark btn-block">Signup</button>
           </div>
 
