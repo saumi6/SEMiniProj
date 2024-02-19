@@ -86,13 +86,13 @@
     <div class="rightCont">
         <div id="Submitted">
             <p>
-                <button class="btn btn-primary" type="button"  id="submit"  data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                <button class="btn btn-primary" type="button"  id="submit" onclick="dropdownID_S" data-bs-toggle="collapse" data-bs-target="#collapseSubmitted" aria-expanded="false" aria-controls="collapseWidthExample">
                     Submitted
                 </button>
             </p>
             <div class="contentRight">
             <div style="min-height: 120px;">
-                <div class="collapse collapse-vertical" id="collapseWidthExample">
+                <div class="collapse collapse-vertical" id="collapseSubmitted">
                 <div class="card card-body" style="width: 200px; height: 200px;">
                     Submitted:5
                 </div>
@@ -117,13 +117,13 @@
 
         <div>
             <p>
-                <button class="btn btn-primary" type="button" id="assigned" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                <button class="btn btn-primary" type="button"  id="submit" data-bs-toggle="collapse" data-bs-target="#collapseAssigned" aria-expanded="false" aria-controls="collapseWidthExample">
                     Assigned
                 </button>
             </p>
             <div class="contentRight">
             <div style="min-height: 120px;">
-                <div class="collapse collapse-vertical" id="collapseWidthExample">
+                <div class="collapse collapse-vertical" id="collapseAssigned">
                 <div class="card card-body" style="width: 200px;height: 200px;">
                     Assigned:3
                 </div>
@@ -148,13 +148,13 @@
 
         <div>
             <p>
-                <button class="btn btn-primary" type="button" id="ToBe" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                <button class="btn btn-primary" type="button" id="ToBe" onclick="dropdownID_M" data-bs-toggle="collapse" data-bs-target="#collapseMissing" aria-expanded="false" aria-controls="collapseWidthExample">
                     Missing
                 </button>
             </p>
             <div class="contentRight">
             <div style="min-height: 120px;">
-                <div class="collapse collapse-vertical" id="collapseWidthExample">
+                <div class="collapse collapse-vertical" id="collapseMissing">
                 <div class="card card-body" style="width: 200px;height: 200px;">
                     Missing:0
                 </div>
@@ -182,7 +182,30 @@
           </a>
     </div>
 </div>
+<script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let buttons = document.querySelectorAll('.btn');
 
+            buttons.forEach((button) => {
+                button.addEventListener('click', () => {
+                    let targetId = button.getAttribute('data-bs-target');
+                    let targetCollapse = new bootstrap.Collapse(document.getElementById(targetId.substring(2))); // Remove the '#' from the ID
+
+                    // Hide all other collapse elements
+                    buttons.forEach((otherButton) => {
+                        if (otherButton !== button) {
+                            let otherTargetId = otherButton.getAttribute('data-bs-target');
+                            let otherCollapse = new bootstrap.Collapse(document.getElementById(otherTargetId.substring(1)));
+                            otherCollapse.hide();
+                        }
+                    });
+
+                    // Toggle the collapse for the clicked button
+                    targetCollapse.toggle();
+                });
+            });
+        });
+</script>
 </body>
 
 </html>
